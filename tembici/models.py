@@ -8,5 +8,7 @@ class ClassificacaoViagem(models.Model):
 class Viagem(models.Model):
     data_inicio = models.DateTimeField(null=False)
     data_fim = models.DateTimeField(null=False)
-    classificacao = models.OneToOneField(ClassificacaoViagem, primary_key=True, null=False)
+    classificacao = models.OneToOneField(
+        ClassificacaoViagem, primary_key=True, null=False
+    )
     nota = models.IntegerField(null=False)

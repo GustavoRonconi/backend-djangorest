@@ -1,6 +1,8 @@
 from django.urls import path
+from rest_framework_simplejwt import views as jwt_views
 from tembici import views
 
 urlpatterns = [
-    path("", views.login, name="login")
+    path("", auth_views.login, name="login"),
+    
 ]
