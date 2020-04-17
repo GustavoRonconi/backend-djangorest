@@ -17,13 +17,13 @@ https://www.getpostman.com/collections/eb7eea88044d47dffc96
 
 ### Prerequisites
 
-django
-djangorestframework
-djangorestframework_simplejwt
+* django
+* djangorestframework
+* djangorestframework_simplejwt
 
 ## Running a application
 
-Para executar o programa e todos os métodos, basta:
+Rodando o servidor Django! 
 
 ```
 python manage.py runserver 5000 
