@@ -1,5 +1,13 @@
-from django.http import HttpResponse
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
 
 
-def login(request):
-    return HttpResponse("Hello, Django!")
+class Index(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def get(self, request):
+        content = {"message": "REST INDEX"}
+        return Response(content)
+
+
