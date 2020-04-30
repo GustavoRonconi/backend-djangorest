@@ -1,5 +1,3 @@
-# Desafio TEMBICI
-
 Projeto simples, de demonstração de conhecimento
 
 ## Getting Started
